@@ -1,0 +1,1770 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>صدقة جارية | مها محمد السيد المليجي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Kufi+Arabic:wght@500;700;800&family=Tajawal:wght@400;500;700&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #ecefec;
+        --surface: #f8f9f7;
+        --ink: #17231f;
+        --muted: #566660;
+        --line: #cbd3ce;
+        --accent: #d4a63a;
+        --accent-ink: #1a1400;
+        --deep: #12302b;
+        --deep-ink: #eef3f0;
+        --deep-muted: #a8bdb5;
+        --hf: "Noto Kufi Arabic", Tajawal, Tahoma, sans-serif;
+        --bf: Tajawal, Tahoma, "Segoe UI", Arial, sans-serif;
+        --qs: 30px;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #0d1513;
+          --surface: #142320;
+          --ink: #e8efec;
+          --muted: #98aaa3;
+          --line: #25382f;
+          --deep: #081210;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #0d1513;
+        --surface: #142320;
+        --ink: #e8efec;
+        --muted: #98aaa3;
+        --line: #25382f;
+        --deep: #081210;
+        color-scheme: dark;
+      }
+      :root[lang="en"] {
+        --hf: "Barlow Condensed", "Noto Kufi Arabic", Arial, sans-serif;
+        --bf: Inter, "Segoe UI", Tajawal, Arial, sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: calc(70px + env(safe-area-inset-top, 0px));
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: var(--bf);
+        font-size: 18px;
+        line-height: 1.85;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
+      }
+      :root[lang="en"] body {
+        font-size: 17px;
+        line-height: 1.7;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0 0 auto;
+        height: env(safe-area-inset-top, 0px);
+        background: var(--deep);
+        z-index: 60;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--hf);
+        margin: 0;
+        line-height: 1.4;
+      }
+      p {
+        margin: 0;
+      }
+      button {
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+      }
+      :focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 3px;
+      }
+      .wrap {
+        width: min(1000px, 100% - 40px);
+        margin-inline: auto;
+      }
+      .ar {
+        font-family: "Amiri Quran", "Noto Naskh Arabic", Tahoma, serif;
+      }
+
+      header {
+        position: sticky;
+        top: env(safe-area-inset-top, 0px);
+        z-index: 50;
+        background: var(--deep);
+        color: var(--deep-ink);
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 66px;
+        gap: 14px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font: 800 19px var(--hf);
+      }
+      .logo svg {
+        width: 28px;
+        height: 28px;
+      }
+      .links {
+        display: flex;
+        gap: 26px;
+        font-size: 16px;
+        color: var(--deep-muted);
+      }
+      .links a {
+        transition: color 0.2s;
+      }
+      .links a:hover {
+        color: #fff;
+      }
+      .tools {
+        display: flex;
+        gap: 10px;
+      }
+      .ib {
+        height: 40px;
+        min-width: 40px;
+        padding: 0 12px;
+        border: 1.5px solid #3b524a;
+        background: transparent;
+        color: var(--deep-ink);
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 14px;
+        transition:
+          border-color 0.2s,
+          background-color 0.2s;
+      }
+      .ib:hover {
+        border-color: var(--accent);
+        background: rgba(255, 255, 255, 0.07);
+      }
+      .btn {
+        display: inline-flex;
+        padding: 11px 24px;
+        border: 0;
+        border-radius: 3px;
+        background: var(--accent);
+        color: var(--accent-ink);
+        font: 700 16px var(--bf);
+        transition:
+          background-color 0.2s,
+          transform 0.2s;
+      }
+      .btn:hover {
+        background: #e3b94f;
+        transform: translateY(-2px);
+      }
+      .btn.out {
+        background: transparent;
+        color: inherit;
+        border: 1.5px solid currentColor;
+      }
+
+      .hero {
+        background: var(--deep);
+        color: var(--deep-ink);
+      }
+      .hero .wrap {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 30px;
+        align-items: end;
+        padding-top: 64px;
+      }
+      .hero small {
+        display: block;
+        color: var(--accent);
+        font-size: 19px;
+        margin-bottom: 10px;
+      }
+      .hero h1 {
+        font-size: clamp(32px, 5vw, 56px);
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+      .hero p {
+        color: var(--deep-muted);
+        max-width: 31em;
+        margin-bottom: 30px;
+        font-size: 19px;
+      }
+      .cta {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+      }
+      .site {
+        width: 100%;
+        display: block;
+      }
+      .site .d {
+        stroke-dasharray: var(--l);
+        stroke-dashoffset: var(--l);
+        animation: dr 2.2s ease-out forwards;
+      }
+      @keyframes dr {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      section {
+        padding: 76px 0;
+      }
+      h2 {
+        font-size: clamp(26px, 3.4vw, 36px);
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+      .intro {
+        max-width: 560px;
+        color: var(--muted);
+        margin-bottom: 34px;
+      }
+
+      .hadith {
+        background: var(--surface);
+        border-block: 1px solid var(--line);
+        padding: 56px 0;
+      }
+      .hadith .wrap {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 34px;
+        align-items: center;
+      }
+      .hadith .bar {
+        width: 8px;
+        align-self: stretch;
+        background: var(--accent);
+      }
+      .hadith blockquote {
+        margin: 0;
+        font-size: clamp(24px, 3.2vw, 32px);
+        line-height: 2.1;
+      }
+      .hadith cite {
+        display: block;
+        margin-top: 10px;
+        color: var(--muted);
+        font-style: normal;
+        font-size: 16px;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 26px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 26px;
+        flex-wrap: wrap;
+      }
+      .tab {
+        background: none;
+        border: 0;
+        padding: 8px 0;
+        font-weight: 700;
+        font-size: 17px;
+        color: var(--muted);
+        border-bottom: 3px solid transparent;
+        margin-bottom: -1px;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      .tab:hover {
+        color: var(--ink);
+      }
+      .tab[aria-selected="true"] {
+        color: var(--ink);
+        border-bottom-color: var(--accent);
+      }
+      #qtabs {
+        gap: 4px 20px;
+      }
+      #qtabs .tab {
+        font-size: 16px;
+      }
+      .idx {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 4px 16px;
+        margin: 16px 0;
+      }
+      .idx a {
+        display: flex;
+        gap: 8px;
+        padding: 3px 0;
+        border-bottom: 1px solid var(--line);
+        transition: color 0.2s;
+      }
+      .idx a:hover {
+        color: var(--accent);
+      }
+      .idx b {
+        color: var(--muted);
+        min-width: 28px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      details {
+        margin-top: 22px;
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 700;
+      }
+      [hidden] {
+        display: none !important;
+      }
+      .qn {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .qn .ib {
+        border-color: var(--line);
+        color: var(--ink);
+      }
+      .bsm {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--accent);
+      }
+      .qt.just {
+        text-align: justify;
+        text-align-last: center;
+      }
+      .qerr {
+        margin-top: 14px;
+        color: var(--muted);
+      }
+      .qerr a {
+        border-bottom: 1.5px solid var(--accent);
+        color: var(--ink);
+      }
+      .ts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+      .pick {
+        display: flex;
+        gap: 6px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .pick button {
+        background: none;
+        border: 0;
+        border-bottom: 3px solid transparent;
+        padding: 4px 0;
+        color: var(--deep-muted);
+        font:
+          22px "Amiri Quran",
+          serif;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      .pick button[aria-pressed="true"] {
+        color: #fff;
+        border-bottom-color: var(--accent);
+      }
+      .big-c {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: 4px solid var(--accent);
+        background: transparent;
+        font: 800 56px var(--hf);
+        color: var(--deep-ink);
+        transition:
+          transform 0.15s,
+          background-color 0.2s;
+      }
+      .big-c:active {
+        transform: scale(0.95);
+        background: rgba(212, 166, 58, 0.18);
+      }
+      .jp {
+        margin-bottom: 16px;
+        color: var(--muted);
+      }
+      .jp b {
+        color: var(--ink);
+      }
+      .jg {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+        gap: 8px;
+      }
+      .jg button {
+        padding: 10px 6px;
+        border: 1.5px solid var(--line);
+        background: var(--surface);
+        font-size: 16px;
+        transition:
+          background-color 0.2s,
+          border-color 0.2s;
+      }
+      .jg button:hover {
+        border-color: var(--accent);
+      }
+      .jg button[aria-pressed="true"] {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: var(--accent-ink);
+        font-weight: 700;
+      }
+      .names {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 2px 14px;
+        border-top: 2px solid var(--accent);
+      }
+      .names span {
+        padding: 8px 0;
+        border-bottom: 1px solid #2d453d;
+        font-size: 24px;
+        text-align: center;
+        transition: color 0.2s;
+      }
+      .names span:hover {
+        color: var(--accent);
+      }
+      .qbox {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-inline-start: 8px solid var(--accent);
+        padding: 26px 30px;
+      }
+      .qhead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+      }
+      .qhead h3 {
+        font-size: 22px;
+      }
+      .qhead .meta {
+        color: var(--muted);
+        font-size: 15px;
+      }
+      .fs {
+        display: flex;
+        gap: 6px;
+      }
+      .fs .ib {
+        border-color: var(--line);
+        color: var(--ink);
+        min-width: 38px;
+        height: 36px;
+      }
+      .qt {
+        font-size: var(--qs);
+        line-height: 2.4;
+        text-align: center;
+        transition:
+          font-size 0.2s,
+          opacity 0.25s;
+      }
+      .qt i {
+        font-style: normal;
+        color: var(--accent);
+        margin: 0 6px;
+      }
+      .more {
+        margin-top: 18px;
+        display: inline-block;
+        color: var(--muted);
+        border-bottom: 1.5px solid var(--accent);
+      }
+
+      .band {
+        background: var(--deep);
+        color: var(--deep-ink);
+      }
+      .band .intro {
+        color: var(--deep-muted);
+      }
+      .band .tabs {
+        border-color: #2d453d;
+      }
+      .band .tab {
+        color: var(--deep-muted);
+      }
+      .band .tab:hover,
+      .band .tab[aria-selected="true"] {
+        color: #fff;
+      }
+      .ledger {
+        border-top: 2px solid var(--accent);
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+        align-items: center;
+        padding: 16px 0;
+        border-bottom: 1px solid #2d453d;
+        cursor: pointer;
+        transition:
+          background-color 0.25s,
+          opacity 0.3s,
+          padding 0.25s;
+      }
+      .row:hover {
+        background: #17403a;
+        padding-inline: 12px;
+      }
+      .row .ar {
+        font-size: 24px;
+        line-height: 2.1;
+      }
+      .cnt {
+        min-width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        border: 2px solid var(--accent);
+        background: transparent;
+        color: var(--deep-ink);
+        font: 700 20px var(--hf);
+        transition:
+          background-color 0.25s,
+          transform 0.15s;
+      }
+      .cnt:active {
+        transform: scale(0.92);
+      }
+      .row.done {
+        opacity: 0.5;
+      }
+      .row.done .cnt {
+        background: var(--accent);
+        color: var(--accent-ink);
+      }
+      .reset {
+        margin-top: 20px;
+        background: none;
+        border: 1.5px solid #3b524a;
+        color: var(--deep-ink);
+        padding: 8px 18px;
+        border-radius: 3px;
+      }
+      .reset:hover {
+        border-color: var(--accent);
+      }
+
+      .duas {
+        border-top: 2px solid var(--accent);
+      }
+      .duas p {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 26px;
+        line-height: 2.2;
+      }
+
+      footer {
+        background: var(--deep);
+        color: var(--deep-muted);
+        padding: 34px 0;
+        text-align: center;
+      }
+      footer .ar {
+        font-size: 24px;
+        color: var(--deep-ink);
+        margin-bottom: 8px;
+      }
+      .rv {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 0.6s,
+          transform 0.6s;
+      }
+      .rv.in {
+        opacity: 1;
+        transform: none;
+      }
+      main,
+      footer {
+        transition: opacity 0.2s;
+      }
+      body.swap main,
+      body.swap footer {
+        opacity: 0;
+      }
+      @media (max-width: 820px) {
+        .links {
+          display: none;
+        }
+        .hero .wrap,
+        .hadith .wrap {
+          grid-template-columns: 1fr;
+        }
+        .hero .wrap {
+          padding-top: 40px;
+        }
+        .cta {
+          padding-bottom: 28px;
+        }
+        .hadith .bar {
+          width: auto;
+          height: 6px;
+        }
+        .tools .btn {
+          display: none;
+        }
+        section {
+          padding: 56px 0;
+        }
+        .qbox {
+          padding: 20px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .rv {
+          opacity: 1;
+          transform: none;
+        }
+        * {
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+        }
+        .site .d {
+          animation: none;
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="logo" href="#top"
+          ><svg viewBox="0 0 28 28" aria-hidden="true">
+            <rect width="28" height="28" fill="#d4a63a" />
+            <path
+              d="M6 22V13a8 8 0 0 1 16 0v9M10 22v-7a4 4 0 0 1 8 0v7"
+              fill="none"
+              stroke="#1a1400"
+              stroke-width="2.4"
+            /></svg>
+            <a>صدقة جارية</a>
+        <nav class="links" aria-label="التنقل الرئيسي">
+          <a href="#quran">القرآن</a><a href="#adhkar">الأذكار</a
+          ><a href="#duas">الدعاء</a><a href="#tasbih">السبحة</a
+          ><a href="#khatma">ختمة</a><a href="#names">الأسماء الحسنى</a>
+        </nav>
+        <div class="tools">
+          <button class="ib" id="lang" aria-label="English / عربي">EN</button
+          ><button class="ib" id="theme" aria-label="تبديل الوضع الداكن">
+            ◐
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="hero">
+        <div class="wrap">
+          <div>
+            <small>رحمها الله</small>
+            <h1>صدقة جارية عن روح مها محمد السيد المليجي</h1>
+            <p>
+              اللهم اغفر لها وارحمها واجعل قبرها روضة من رياض الجنة. هذا الموقع
+              مساحة للقرآن والذكر والدعاء، اقرأ منه وادعُ لها.
+            </p>
+            <div class="cta">
+              <a class="btn" href="#quran">اقرأ القرآن</a
+              ><a class="btn out" href="#adhkar">أذكار اليوم والليلة</a>
+            </div>
+          </div>
+          <svg
+            class="site"
+            viewBox="0 0 400 320"
+            fill="none"
+            stroke="#d4a63a"
+            stroke-width="2.5"
+            stroke-linecap="square"
+            aria-hidden="true"
+          >
+            <path
+              class="d"
+              style="--l: 700"
+              d="M90 300V190C90 105 310 105 310 190V300"
+            />
+            <path
+              class="d"
+              style="--l: 420; animation-delay: 0.7s"
+              d="M150 300V225C150 180 250 180 250 225V300"
+              stroke="#eef3f0"
+            />
+            <path
+              class="d"
+              style="--l: 300; animation-delay: 1.1s"
+              d="M40 300V130M62 300V130M40 130l11-34 11 34"
+            />
+            <path
+              class="d"
+              style="--l: 300; animation-delay: 1.1s"
+              d="M338 300V130M360 300V130M338 130l11-34 11 34"
+            />
+            <path
+              class="d"
+              style="--l: 120; animation-delay: 1.6s"
+              d="M200 104V76M213 62a14 14 0 1 1-13-14 11 11 0 0 0 13 14"
+            />
+            <path d="M20 300h360" stroke="#a8bdb5" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="hadith">
+        <div class="wrap">
+          <div class="bar"></div>
+          <div>
+            <h3 style="margin-bottom: 12px">الصدقة الجارية</h3>
+            <blockquote class="ar" data-ar>
+              إِذَا مَاتَ الْإِنْسَانُ انْقَطَعَ عَنْهُ عَمَلُهُ إِلَّا مِنْ
+              ثَلَاثَةٍ: إِلَّا مِنْ صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ
+              بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ
+            </blockquote>
+            <cite>رواه مسلم</cite>
+            <blockquote
+              class="ar"
+              data-ar
+              style="font-size: 25px; margin-top: 28px"
+            >
+              مَنْ دَلَّ عَلَىٰ خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ
+            </blockquote>
+            <cite>رواه مسلم</cite>
+            <blockquote
+              class="ar"
+              data-ar
+              style="font-size: 25px; margin-top: 28px"
+            >
+              مَنْ دَعَا إِلَىٰ هُدًى كَانَ لَهُ مِنَ الْأَجْرِ مِثْلُ أُجُورِ
+              مَنْ تَبِعَهُ، لَا يَنْقُصُ ذَٰلِكَ مِنْ أُجُورِهِمْ شَيْئًا
+            </blockquote>
+            <cite>رواه مسلم</cite>
+            <blockquote
+              class="ar"
+              data-ar
+              style="font-size: 25px; margin-top: 28px"
+            >
+              دَعْوَةُ الْمَرْءِ الْمُسْلِمِ لِأَخِيهِ بِظَهْرِ الْغَيْبِ
+              مُسْتَجَابَةٌ
+            </blockquote>
+            <cite>رواه مسلم</cite>
+          </div>
+        </div>
+      </div>
+
+      <section id="quran">
+        <div class="wrap">
+          <h2>القرآن الكريم</h2>
+          <p class="intro">
+            سور وآيات مختارة للقراءة هنا، وفهرس السور الـ١١٤ أسفلها يفتح أي سورة
+            كاملة.
+          </p>
+          <div class="tabs" id="qtabs" role="tablist"></div>
+          <div class="qbox" id="qbox">
+            <div class="qhead">
+              <div>
+                <h3 class="ar" id="qt" data-ar></h3>
+                <span class="meta" id="qm"></span>
+              </div>
+              <div class="fs">
+                <button class="ib" id="fm" aria-label="تصغير الخط">أ−</button
+                ><button class="ib" id="fp" aria-label="تكبير الخط">أ+</button>
+              </div>
+            </div>
+            <p class="qt ar" id="qx" data-ar></p>
+            <p class="qerr" id="qe" hidden>
+              تعذّر تحميل السورة هنا. المصحف الكامل يحتاج اتصالًا بالإنترنت وفتح
+              الملف خارج المعاينة.
+              <a id="qel" target="_blank" rel="noopener"
+                >افتحها على quran.com</a
+              >
+            </p>
+            <div class="qn" id="qn" hidden>
+              <button class="ib" id="qp">السورة السابقة</button
+              ><button class="ib" id="qnx">السورة التالية</button>
+            </div>
+          </div>
+          <details open>
+            <summary>فهرس السور (١١٤ سورة)</summary>
+            <div class="idx" id="idx"></div>
+            <a
+              class="more"
+              href="https://quran.com/ar"
+              target="_blank"
+              rel="noopener"
+              >المصحف كاملًا على quran.com</a
+            >
+          </details>
+        </div>
+      </section>
+
+      <section id="adhkar" class="band">
+        <div class="wrap">
+          <h2>الأذكار</h2>
+          <p class="intro">
+            اضغط على الذكر ليزيد العدّاد. العدّ مفتوح بلا حد، وللبدء من جديد
+            اضغط «إعادة العدّ».
+          </p>
+          <div class="tabs" role="tablist">
+            <button class="tab" role="tab" data-c="0" aria-selected="true">
+              الصباح والمساء</button
+            ><button class="tab" role="tab" data-c="1" aria-selected="false">
+              بعد الصلاة</button
+            ><button class="tab" role="tab" data-c="2" aria-selected="false">
+              النوم والاستيقاظ</button
+            ><button class="tab" role="tab" data-c="3" aria-selected="false">
+              أذكار متفرقة</button
+            ><button class="tab" role="tab" data-c="4" aria-selected="false">
+              الاستغفار والصلاة على النبي
+            </button>
+          </div>
+          <div class="ledger" id="al"></div>
+          <button class="reset" id="rs">إعادة العدّ</button>
+        </div>
+      </section>
+
+      <section id="duas">
+        <div class="wrap">
+          <h2>دعاء لها</h2>
+          <p class="intro">ادعُ لها بما تيسّر، وهذه بعض الأدعية للميت.</p>
+          <div class="duas ar" data-ar>
+            <p>
+              اللَّهُمَّ اغْفِرْ لَهَا وَارْحَمْهَا وَعَافِهَا وَاعْفُ عَنْهَا،
+              وَأَكْرِمْ نُزُلَهَا وَوَسِّعْ مُدْخَلَهَا، وَاغْسِلْهَا
+              بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ، وَنَقِّهَا مِنَ الْخَطَايَا
+              كَمَا نَقَّيْتَ الثَّوْبَ الْأَبْيَضَ مِنَ الدَّنَسِ
+            </p>
+            <p>
+              اللَّهُمَّ أَبْدِلْهَا دَارًا خَيْرًا مِنْ دَارِهَا، وَأَهْلًا
+              خَيْرًا مِنْ أَهْلِهَا، وَأَدْخِلْهَا الْجَنَّةَ، وَأَعِذْهَا مِنْ
+              عَذَابِ الْقَبْرِ وَمِنْ عَذَابِ النَّارِ
+            </p>
+            <p>اللَّهُمَّ ثَبِّتْهَا عِنْدَ السُّؤَالِ</p>
+            <p>
+              اللَّهُمَّ إِنَّهَا فِي ذِمَّتِكَ وَحَبْلِ جِوَارِكَ، فَقِهَا مِنْ
+              فِتْنَةِ الْقَبْرِ وَعَذَابِ النَّارِ، وَأَنْتَ أَهْلُ الْوَفَاءِ
+              وَالْحَمْدِ، اللَّهُمَّ فَاغْفِرْ لَهَا وَارْحَمْهَا، إِنَّكَ
+              أَنْتَ الْغَفُورُ الرَّحِيمُ
+            </p>
+            <p>
+              اللَّهُمَّ اغْفِرْ لَهَا وَارْفَعْ دَرَجَتَهَا فِي
+              الْمَهْدِيِّينَ، وَاخْلُفْهَا فِي عَقِبِهَا فِي الْغَابِرِينَ،
+              وَاغْفِرْ لَنَا وَلَهَا يَا رَبَّ الْعَالَمِينَ، وَافْسَحْ لَهَا
+              فِي قَبْرِهَا وَنَوِّرْ لَهَا فِيهِ
+            </p>
+            <p>
+              اللَّهُمَّ لَا تَحْرِمْنَا أَجْرَهَا وَلَا تَفْتِنَّا بَعْدَهَا
+              وَاغْفِرْ لَنَا وَلَهَا
+            </p>
+            <p>
+              اللَّهُمَّ اغْفِرْ لِحَيِّنَا وَمَيِّتِنَا وَشَاهِدِنَا
+              وَغَائِبِنَا وَصَغِيرِنَا وَكَبِيرِنَا وَذَكَرِنَا وَأُنْثَانَا
+            </p>
+            <p>
+              رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا
+              بِالْإِيمَانِ وَلَا تَجْعَلْ فِي قُلُوبِنَا غِلًّا لِّلَّذِينَ
+              آمَنُوا رَبَّنَا إِنَّكَ رَءُوفٌ رَّحِيمٌ
+            </p>
+            <p>
+              رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ
+              يَقُومُ الْحِسَابُ
+            </p>
+            <p>
+              رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً
+              وَقِنَا عَذَابَ النَّارِ
+            </p>
+            <p>
+              السَّلَامُ عَلَيْكُمْ أَهْلَ الدِّيَارِ مِنَ الْمُؤْمِنِينَ
+              وَالْمُسْلِمِينَ، وَإِنَّا إِنْ شَاءَ اللَّهُ بِكُمْ لَاحِقُونَ،
+              نَسْأَلُ اللَّهَ لَنَا وَلَكُمُ الْعَافِيَةَ
+            </p>
+            <p>
+              رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ
+              لَنَا مِن لَّدُنكَ رَحْمَةً إِنَّكَ أَنتَ الْوَهَّابُ
+            </p>
+            <p>
+              رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا
+              وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ
+            </p>
+            <p>رَبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّاحِمِينَ</p>
+            <p>رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ</p>
+            <p>
+              رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ
+              أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+            </p>
+            <p>اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنَّا</p>
+            <p>اللَّهُمَّ اجْمَعْنَا بِهَا فِي جَنَّاتِ النَّعِيمِ</p>
+          </div>
+          <h3 style="margin: 40px 0 6px">أدعية من القرآن الكريم</h3>
+          <div class="duas ar" data-ar>
+            <p>رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي</p>
+            <p>رَبِّ زِدْنِي عِلْمًا</p>
+            <p>
+              رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ
+              عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ
+              وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ
+            </p>
+            <p>رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا</p>
+            <p>
+              رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي رَبَّنَا
+              وَتَقَبَّلْ دُعَاءِ
+            </p>
+            <p>
+              رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنتَ خَيْرُ
+              الرَّاحِمِينَ
+            </p>
+            <p>
+              رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ إِنَّ عَذَابَهَا كَانَ
+              غَرَامًا
+            </p>
+            <p>
+              رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا
+              وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ
+            </p>
+            <p>
+              رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَعُوذُ بِكَ
+              رَبِّ أَن يَحْضُرُونِ
+            </p>
+            <p>رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ</p>
+            <p>حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ</p>
+            <p>
+              اللَّهُمَّ اجْعَلْ قَبْرَهَا رَوْضَةً مِنْ رِيَاضِ الْجَنَّةِ
+              وَلَا تَجْعَلْهُ حُفْرَةً مِنْ حُفَرِ النَّارِ
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="names" class="band">
+        <div class="wrap">
+          <h2>أسماء الله الحسنى</h2>
+          <p class="intro ar" data-ar>
+            وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا
+          </p>
+          <div class="names ar" id="nm" data-ar></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p class="ar" data-ar>إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ</p>
+        <p>اللهم اجعل هذا العمل في ميزان حسناتها</p>
+        <div style="margin-top: 16px">
+          <button class="btn out" id="sh">شارك الموقع</button>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var Q = [
+          [
+            "الفاتحة",
+            7,
+            "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ|الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ|الرَّحْمَٰنِ الرَّحِيمِ|مَالِكِ يَوْمِ الدِّينِ|إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ|اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ|صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+          ],
+          [
+            "آية الكرسي",
+            1,
+            "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+          ],
+          [
+            "الإخلاص",
+            4,
+            "قُلْ هُوَ اللَّهُ أَحَدٌ|اللَّهُ الصَّمَدُ|لَمْ يَلِدْ وَلَمْ يُولَدْ|وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+          ],
+          [
+            "الفلق",
+            5,
+            "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ|مِن شَرِّ مَا خَلَقَ|وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ|وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ|وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          ],
+          [
+            "الناس",
+            6,
+            "قُلْ أَعُوذُ بِرَبِّ النَّاسِ|مَلِكِ النَّاسِ|إِلَٰهِ النَّاسِ|مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ|الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ|مِنَ الْجِنَّةِ وَالنَّاسِ",
+          ],
+          [
+            "خواتيم البقرة",
+            2,
+            "آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ|لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+          ],
+          [
+            "النفس المطمئنة",
+            4,
+            "يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ|ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً|فَادْخُلِي فِي عِبَادِي|وَادْخُلِي جَنَّتِي",
+          ],
+          [
+            "الضحى",
+            11,
+            "وَالضُّحَىٰ|وَاللَّيْلِ إِذَا سَجَىٰ|مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ|وَلَلْآخِرَةُ خَيْرٌ لَّكَ مِنَ الْأُولَىٰ|وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰ|أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ|وَوَجَدَكَ ضَالًّا فَهَدَىٰ|وَوَجَدَكَ عَائِلًا فَأَغْنَىٰ|فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ|وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ|وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+          ],
+          [
+            "الشرح",
+            8,
+            "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ|وَوَضَعْنَا عَنكَ وِزْرَكَ|الَّذِي أَنقَضَ ظَهْرَكَ|وَرَفَعْنَا لَكَ ذِكْرَكَ|فَإِنَّ مَعَ الْعُسْرِ يُسْرًا|إِنَّ مَعَ الْعُسْرِ يُسْرًا|فَإِذَا فَرَغْتَ فَانصَبْ|وَإِلَىٰ رَبِّكَ فَارْغَب",
+          ],
+          [
+            "التين",
+            8,
+            "وَالتِّينِ وَالزَّيْتُونِ|وَطُورِ سِينِينَ|وَهَٰذَا الْبَلَدِ الْأَمِينِ|لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ|ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ|إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ|فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ|أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
+          ],
+          [
+            "القدر",
+            5,
+            "إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ|وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ|لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ|تَنَزَّلُ الْمَلَائِكَةُ وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ|سَلَامٌ هِيَ حَتَّىٰ مَطْلَعِ الْفَجْرِ",
+          ],
+          [
+            "الزلزلة",
+            8,
+            "إِذَا زُلْزِلَتِ الْأَرْضُ زِلْزَالَهَا|وَأَخْرَجَتِ الْأَرْضُ أَثْقَالَهَا|وَقَالَ الْإِنسَانُ مَا لَهَا|يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا|بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا|يَوْمَئِذٍ يَصْدُرُ النَّاسُ أَشْتَاتًا لِّيُرَوْا أَعْمَالَهُمْ|فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ|وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُ",
+          ],
+          [
+            "القارعة",
+            11,
+            "الْقَارِعَةُ|مَا الْقَارِعَةُ|وَمَا أَدْرَاكَ مَا الْقَارِعَةُ|يَوْمَ يَكُونُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوثِ|وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنفُوشِ|فَأَمَّا مَن ثَقُلَتْ مَوَازِينُهُ|فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ|وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ|فَأُمُّهُ هَاوِيَةٌ|وَمَا أَدْرَاكَ مَا هِيَهْ|نَارٌ حَامِيَةٌ",
+          ],
+          [
+            "التكاثر",
+            8,
+            "أَلْهَاكُمُ التَّكَاثُرُ|حَتَّىٰ زُرْتُمُ الْمَقَابِرَ|كَلَّا سَوْفَ تَعْلَمُونَ|ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ|كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ|لَتَرَوُنَّ الْجَحِيمَ|ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ|ثُمَّ لَتُسْأَلُنَّ يَوْمَئِذٍ عَنِ النَّعِيمِ",
+          ],
+          [
+            "العصر",
+            3,
+            "وَالْعَصْرِ|إِنَّ الْإِنسَانَ لَفِي خُسْرٍ|إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ",
+          ],
+          [
+            "الفيل",
+            5,
+            "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ|أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ|وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ|تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ|فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ",
+          ],
+          [
+            "قريش",
+            4,
+            "لِإِيلَافِ قُرَيْشٍ|إِيلَافِهِمْ رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ|فَلْيَعْبُدُوا رَبَّ هَٰذَا الْبَيْتِ|الَّذِي أَطْعَمَهُم مِّن جُوعٍ وَآمَنَهُم مِّنْ خَوْفٍ",
+          ],
+          [
+            "الماعون",
+            7,
+            "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ|فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ|وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ|فَوَيْلٌ لِّلْمُصَلِّينَ|الَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ|الَّذِينَ هُمْ يُرَاءُونَ|وَيَمْنَعُونَ الْمَاعُونَ",
+          ],
+          [
+            "الكوثر",
+            3,
+            "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ|فَصَلِّ لِرَبِّكَ وَانْحَرْ|إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
+          ],
+          [
+            "الكافرون",
+            6,
+            "قُلْ يَا أَيُّهَا الْكَافِرُونَ|لَا أَعْبُدُ مَا تَعْبُدُونَ|وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ|وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ|وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ|لَكُمْ دِينُكُمْ وَلِيَ دِينِ",
+          ],
+          [
+            "النصر",
+            3,
+            "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ|وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا|فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا",
+          ],
+          [
+            "المسد",
+            5,
+            "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ|مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ|سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ|وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ|فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ",
+          ],
+        ];
+        var A = [
+          [
+            [
+              "رَضِيتُ بِاللَّهِ رَبًّا وَبِالْإِسْلَامِ دِينًا وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا",
+              3,
+            ],
+            [
+              "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+              3,
+            ],
+            [
+              "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+              3,
+            ],
+            [
+              "حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
+              7,
+            ],
+            [
+              "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+              1,
+            ],
+            ["سُبْحَانَ اللَّهِ وَبِحَمْدِهِ", 100],
+            ["أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ", 100],
+            [
+              "لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+              10,
+            ],
+            ["اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَىٰ نَبِيِّنَا مُحَمَّدٍ", 10],
+            [
+              "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَٰهَ إِلَّا أَنْتَ",
+              3,
+            ],
+            [
+              "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَىٰ نَفْسِي طَرْفَةَ عَيْنٍ",
+              1,
+            ],
+            [
+              "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَا نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
+              3,
+            ],
+            [
+              "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ",
+              1,
+            ],
+            [
+              "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَٰهَ إِلَّا أَنْتَ",
+              3,
+            ],
+          ],
+          [
+            ["أَسْتَغْفِرُ اللَّهَ", 3],
+            [
+              "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+              1,
+            ],
+            ["سُبْحَانَ اللَّهِ", 33],
+            ["الْحَمْدُ لِلَّهِ", 33],
+            ["اللَّهُ أَكْبَرُ", 34],
+            ["آيَةُ الْكُرْسِيِّ", 1],
+            [
+              "اللَّهُمَّ أَعِنِّي عَلَىٰ ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+              1,
+            ],
+            [
+              "قُلْ هُوَ اللَّهُ أَحَدٌ، وَقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، وَقُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+              1,
+            ],
+            [
+              "لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+              1,
+            ],
+          ],
+          [
+            ["آيَةُ الْكُرْسِيِّ", 1],
+            [
+              "قُلْ هُوَ اللَّهُ أَحَدٌ، وَقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، وَقُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+              3,
+            ],
+            ["بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا", 1],
+            ["اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ", 3],
+            [
+              "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+              1,
+            ],
+            [
+              "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي وَبِكَ أَرْفَعُهُ، فَإِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ",
+              1,
+            ],
+            ["سُبْحَانَ اللَّهِ", 33],
+            ["الْحَمْدُ لِلَّهِ", 33],
+            ["اللَّهُ أَكْبَرُ", 34],
+          ],
+          [
+            [
+              "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا (دخول المنزل)",
+              1,
+            ],
+            [
+              "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ (الخروج من المنزل)",
+              1,
+            ],
+            ["اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ (دخول المسجد)", 1],
+            [
+              "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ (الخروج من المسجد)",
+              1,
+            ],
+            ["بِسْمِ اللَّهِ (قبل الطعام)", 1],
+            [
+              "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ (بعد الطعام)",
+              1,
+            ],
+            [
+              "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ (الركوب)",
+              1,
+            ],
+            [
+              "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ (للهم والحزن)",
+              1,
+            ],
+            [
+              "لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
+              1,
+            ],
+            [
+              "بِسْمِ اللَّهِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ (دخول الخلاء)",
+              1,
+            ],
+            ["غُفْرَانَكَ (الخروج من الخلاء)", 1],
+            [
+              "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ (بعد الوضوء)",
+              1,
+            ],
+            [
+              "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ وَالصَّلَاةِ الْقَائِمَةِ آتِ مُحَمَّدًا الْوَسِيلَةَ وَالْفَضِيلَةَ وَابْعَثْهُ مَقَامًا مَحْمُودًا الَّذِي وَعَدْتَهُ (بعد الأذان)",
+              1,
+            ],
+            [
+              "الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ (لبس الثوب)",
+              1,
+            ],
+            ["اللَّهُمَّ صَيِّبًا نَافِعًا (عند المطر)", 3],
+            ["لَا بَأْسَ طَهُورٌ إِنْ شَاءَ اللَّهُ (زيارة المريض)", 1],
+            [
+              "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا (عند المصيبة)",
+              1,
+            ],
+            ["أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ (عند الغضب)", 1],
+          ],
+          [
+            [
+              "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ",
+              1,
+            ],
+            [
+              "رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ",
+              1,
+            ],
+            [
+              "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
+              1,
+            ],
+            [
+              "سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلَٰهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ",
+              1,
+            ],
+            ["لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ", 1],
+            [
+              "لَا إِلَٰهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ",
+              1,
+            ],
+            [
+              "اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+              1,
+            ],
+          ],
+        ];
+        var D = {
+          القرآن: "Quran",
+          الأذكار: "Adhkar",
+          الدعاء: "Duas",
+          "صدقة جارية": "Sadaqah Jariyah",
+          "التنقل الرئيسي": "Main navigation",
+          "تبديل الوضع الداكن": "Toggle dark mode",
+          "رحمها الله": "May Allah have mercy on her",
+          "صدقة جارية عن روح مها محمد السيد المليجي":
+            "A sadaqah jariyah for the soul of Maha Mohamed El-Sayed El-Meligy",
+          "اللهم اغفر لها وارحمها واجعل قبرها روضة من رياض الجنة. هذا الموقع مساحة للقرآن والذكر والدعاء، اقرأ منه وادعُ لها.":
+            "O Allah, forgive her and have mercy on her, and make her grave a garden of Paradise. This site is a space for Quran, remembrance and prayer. Read from it and pray for her.",
+          "اقرأ القرآن": "Read the Quran",
+          "أذكار اليوم والليلة": "Daily adhkar",
+          "الصدقة الجارية": "Ongoing charity",
+          "رواه مسلم": "Narrated by Muslim",
+          "القرآن الكريم": "The Holy Quran",
+          "سور وآيات مختارة للقراءة هنا، وفهرس السور الـ١١٤ أسفلها يفتح أي سورة كاملة.":
+            "Selected surahs and verses to read here; the index of all 114 surahs below opens any surah in full.",
+          "تصغير الخط": "Decrease font size",
+          "تكبير الخط": "Increase font size",
+          "المصحف كاملًا على quran.com": "Full Mushaf on quran.com",
+          آيات: "verses",
+          "فهرس السور (١١٤ سورة)": "Index of all 114 surahs",
+          "أذكار متفرقة": "Everyday occasions",
+          "الاستغفار والصلاة على النبي": "Istighfar & salawat",
+          "أدعية من القرآن الكريم": "Duas from the Holy Quran",
+          السبحة: "Tasbih",
+          ختمة: "Khatma",
+          "الأسماء الحسنى": "Names of Allah",
+          "أسماء الله الحسنى": "The Beautiful Names of Allah",
+          "اختر الذكر ثم اضغط على الدائرة لتعدّ. العدّ مفتوح بلا حد.":
+            "Choose a dhikr, then tap the circle to count. Counting is open-ended.",
+          "ختمة لها": "A khatma for her",
+          "علّم كل جزء تقرأه لتتابع ختمتك. يُحفظ تقدّمك على جهازك فقط.":
+            "Mark each juz you read to track your khatma. Your progress is saved on your device only.",
+          الجزء: "Juz",
+          "جزءًا مقروءًا": "juz' read",
+          "شارك الموقع": "Share this site",
+          "تم نسخ الرابط": "Link copied",
+          "تعذّر تحميل السورة هنا. المصحف الكامل يحتاج اتصالًا بالإنترنت وفتح الملف خارج المعاينة.":
+            "Couldn't load the surah here. The full Mushaf needs an internet connection and the file opened outside the preview.",
+          "افتحها على quran.com": "Open it on quran.com",
+          "السورة السابقة": "Previous surah",
+          "السورة التالية": "Next surah",
+          آية: "verse",
+          "اضغط على الذكر ليزيد العدّاد. العدّ مفتوح بلا حد، وللبدء من جديد اضغط «إعادة العدّ».":
+            "Tap a dhikr to increase its counter. Counting is open-ended, with no limit. Press Reset counts to start over.",
+          "الصباح والمساء": "Morning & evening",
+          "بعد الصلاة": "After prayer",
+          "النوم والاستيقاظ": "Sleep & waking",
+          "إعادة العدّ": "Reset counts",
+          "دعاء لها": "Duas for her",
+          "ادعُ لها بما تيسّر، وهذه بعض الأدعية للميت.":
+            "Pray for her with whatever is easy; here are some duas for the deceased.",
+          "اللهم اجعل هذا العمل في ميزان حسناتها":
+            "O Allah, place this work in the scale of her good deeds.",
+          "صدقة جارية | مها محمد السيد المليجي":
+            "Sadaqah Jariyah | Maha Mohamed El-Sayed El-Meligy",
+        };
+        var cur = "ar",
+          qi = 0,
+          ac = 0,
+          cnt = {},
+          root = document.documentElement,
+          $ = function (i) {
+            return document.getElementById(i);
+          };
+        var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        function nf(n) {
+          return new Intl.NumberFormat(cur === "en" ? "en" : "ar-EG").format(n);
+        }
+
+        function drawQ() {
+          var q = Q[qi],
+            t = $("qtabs");
+          if (!t.children.length) {
+            Q.forEach(function (x, i) {
+              var b = document.createElement("button");
+              b.className = "tab ar";
+              b.setAttribute("role", "tab");
+              b.setAttribute("data-ar", "");
+              b.textContent = x[0];
+              b.onclick = function () {
+                full = 0;
+                qi = i;
+                drawQ();
+                tr();
+              };
+              t.appendChild(b);
+            });
+          }
+          Array.prototype.forEach.call(t.children, function (b, i) {
+            b.setAttribute("aria-selected", i === qi);
+          });
+          if (full) {
+            showFull(full);
+            return;
+          }
+          $("qn").hidden = true;
+          $("qe").hidden = true;
+          $("qx").className = "qt ar";
+          $("qt").textContent = (qi < 5 || qi === 0 ? "" : "") + q[0];
+          $("qm").innerHTML =
+            "<b>" + nf(q[1]) + "</b> " + (q[1] === 1 ? "آية" : "آيات");
+          var parts = q[2].split("|");
+          $("qx").innerHTML =
+            parts.join(" <i>۝</i> ") + (parts.length > 1 ? " <i>۝</i>" : "");
+        }
+        function drawA() {
+          var l = $("al");
+          l.innerHTML = "";
+          A[ac].forEach(function (d, i) {
+            var k = ac + "-" + i,
+              c = cnt[k] || 0,
+              r = document.createElement("div");
+            r.className = "row";
+            r.innerHTML =
+              '<div class="ar" data-ar>' +
+              d[0] +
+              '</div><button class="cnt" data-ar aria-label="count">' +
+              nf(c) +
+              "</button>";
+            r.onclick = function () {
+              cnt[k] = (cnt[k] || 0) + 1;
+              drawA();
+            };
+            l.appendChild(r);
+          });
+        }
+        function conv(s) {
+          return s;
+        }
+        function trans(s) {
+          var t = s.trim();
+          return s.replace(t, D[t] || t);
+        }
+        function nodes() {
+          var w = document.createTreeWalker(
+              document.body,
+              NodeFilter.SHOW_TEXT,
+              {
+                acceptNode: function (n) {
+                  var p = n.parentNode;
+                  return p.nodeName === "SCRIPT" ||
+                    p.nodeName === "STYLE" ||
+                    p.id === "lang" ||
+                    p.closest("[data-ar]") ||
+                    !n.nodeValue.trim()
+                    ? NodeFilter.FILTER_REJECT
+                    : NodeFilter.FILTER_ACCEPT;
+                },
+              },
+            ),
+            a = [],
+            n;
+          while ((n = w.nextNode())) a.push(n);
+          return a;
+        }
+        function tr() {
+          var en = cur === "en";
+          nodes().forEach(function (n) {
+            if (n._a === undefined) n._a = n.nodeValue;
+            n.nodeValue = en ? trans(n._a) : n._a;
+          });
+          document.querySelectorAll("[aria-label]").forEach(function (e) {
+            if (e.id === "lang" || e.className === "cnt") return;
+            if (e.dataset.arAl === undefined)
+              e.dataset.arAl = e.getAttribute("aria-label");
+            e.setAttribute(
+              "aria-label",
+              en ? D[e.dataset.arAl] || e.dataset.arAl : e.dataset.arAl,
+            );
+          });
+        }
+        function apply(en) {
+          cur = en ? "en" : "ar";
+          root.lang = cur;
+          root.dir = en ? "ltr" : "rtl";
+          drawQ();
+          drawA();
+          drawT();
+          drawJ();
+          tr();
+          document.title = en
+            ? D["صدقة جارية | مها محمد السيد المليجي"]
+            : "صدقة جارية | مها محمد السيد المليجي";
+          $("lang").textContent = en ? "عربي" : "EN";
+          try {
+            localStorage.setItem("slang", cur);
+          } catch (e) {}
+        }
+        document.querySelectorAll("[data-c]").forEach(function (b) {
+          b.onclick = function () {
+            ac = +b.dataset.c;
+            document.querySelectorAll("[data-c]").forEach(function (x) {
+              x.setAttribute("aria-selected", x === b);
+            });
+            drawA();
+          };
+        });
+        $("rs").onclick = function () {
+          cnt = {};
+          drawA();
+        };
+        $("fm").onclick = function () {
+          var s =
+            parseInt(getComputedStyle(root).getPropertyValue("--qs")) || 30;
+          root.style.setProperty("--qs", Math.max(20, s - 3) + "px");
+        };
+        $("fp").onclick = function () {
+          var s =
+            parseInt(getComputedStyle(root).getPropertyValue("--qs")) || 30;
+          root.style.setProperty("--qs", Math.min(52, s + 3) + "px");
+        };
+        $("lang").onclick = function () {
+          var en = cur === "ar";
+          if (reduce) {
+            apply(en);
+            return;
+          }
+          document.body.classList.add("swap");
+          setTimeout(function () {
+            apply(en);
+            document.body.classList.remove("swap");
+          }, 220);
+        };
+        try {
+          var th = localStorage.getItem("stheme");
+          if (th) root.setAttribute("data-theme", th);
+        } catch (e) {}
+        $("theme").onclick = function () {
+          var c = root.getAttribute("data-theme"),
+            dark = c
+              ? c === "dark"
+              : matchMedia("(prefers-color-scheme: dark)").matches,
+            n = dark ? "light" : "dark";
+          root.setAttribute("data-theme", n);
+          try {
+            localStorage.setItem("stheme", n);
+          } catch (e) {}
+        };
+        drawQ();
+        drawA();
+        var N =
+          "الفاتحة،البقرة،آل عمران،النساء،المائدة،الأنعام،الأعراف،الأنفال،التوبة،يونس،هود،يوسف،الرعد،إبراهيم،الحجر،النحل،الإسراء،الكهف،مريم،طه،الأنبياء،الحج،المؤمنون،النور،الفرقان،الشعراء،النمل،القصص،العنكبوت،الروم،لقمان،السجدة،الأحزاب،سبأ،فاطر،يس،الصافات،ص،الزمر،غافر،فصلت،الشورى،الزخرف،الدخان،الجاثية،الأحقاف،محمد،الفتح،الحجرات،ق،الذاريات،الطور،النجم،القمر،الرحمن،الواقعة،الحديد،المجادلة،الحشر،الممتحنة،الصف،الجمعة،المنافقون،التغابن،الطلاق،التحريم،الملك،القلم،الحاقة،المعارج،نوح،الجن،المزمل،المدثر،القيامة،الإنسان،المرسلات،النبأ،النازعات،عبس،التكوير،الانفطار،المطففين،الانشقاق،البروج،الطارق،الأعلى،الغاشية،الفجر،البلد،الشمس،الليل،الضحى،الشرح،التين،العلق،القدر،البينة،الزلزلة،العاديات،القارعة،التكاثر،العصر،الهمزة،الفيل،قريش،الماعون،الكوثر،الكافرون،النصر،المسد،الإخلاص،الفلق،الناس".split(
+            "،",
+          );
+        function bs(w) {
+          return w.replace(/[\u064B-\u065F\u0670\u0671]/g, "");
+        }
+        function getS(n) {
+          try {
+            var c = localStorage.getItem("qs" + n);
+            if (c) return Promise.resolve(JSON.parse(c));
+          } catch (e) {}
+          return fetch(
+            "https://api.alquran.cloud/v1/surah/" + n + "/quran-uthmani",
+          )
+            .then(function (r) {
+              if (!r.ok) throw 0;
+              return r.json();
+            })
+            .then(function (j) {
+              var a = j.data.ayahs.map(function (x) {
+                return x.text;
+              });
+              if (n !== 1 && n !== 9) {
+                var w = a[0].split(" ");
+                if (bs(w[0]) === "بسم" && w.length > 4)
+                  a[0] = w.slice(4).join(" ");
+              }
+              try {
+                localStorage.setItem("qs" + n, JSON.stringify(a));
+              } catch (e) {}
+              return a;
+            });
+        }
+        function showFull(n) {
+          full = n;
+          Array.prototype.forEach.call($("qtabs").children, function (b) {
+            b.setAttribute("aria-selected", "false");
+          });
+          $("qt").textContent = N[n - 1];
+          $("qm").innerHTML = "<b>" + nf(n) + "</b> / <b>" + nf(114) + "</b>";
+          $("qx").className = "qt ar";
+          $("qx").textContent = "…";
+          $("qe").hidden = true;
+          $("qn").hidden = false;
+          getS(n)
+            .then(function (a) {
+              if (full !== n) return;
+              $("qx").className = "qt ar" + (a.length > 20 ? " just" : "");
+              $("qx").innerHTML =
+                (n !== 1 && n !== 9
+                  ? '<span class="bsm">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>'
+                  : "") +
+                a
+                  .map(function (t, i) {
+                    return t + " <i>﴿" + nf(i + 1) + "﴾</i>";
+                  })
+                  .join(" ");
+            })
+            .catch(function () {
+              if (full !== n) return;
+              $("qx").textContent = "";
+              $("qe").hidden = false;
+              $("qel").href = "https://quran.com/ar/" + n;
+            });
+        }
+        function go(n) {
+          if (n < 1 || n > 114) return;
+          showFull(n);
+          $("qbox").scrollIntoView({
+            behavior: reduce ? "auto" : "smooth",
+            block: "start",
+          });
+        }
+        $("qp").onclick = function () {
+          go(full - 1);
+        };
+        $("qnx").onclick = function () {
+          go(full + 1);
+        };
+        N.forEach(function (n, i) {
+          var a = document.createElement("a");
+          a.href = "https://quran.com/ar/" + (i + 1);
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.onclick = function (e) {
+            e.preventDefault();
+            go(i + 1);
+          };
+          a.setAttribute("data-ar", "");
+          a.innerHTML =
+            "<b>" + (i + 1) + '</b><span class="ar">' + n + "</span>";
+          $("idx").appendChild(a);
+        });
+        var TS = [
+            "سُبْحَانَ اللَّهِ",
+            "الْحَمْدُ لِلَّهِ",
+            "لَا إِلَٰهَ إِلَّا اللَّهُ",
+            "اللَّهُ أَكْبَرُ",
+            "أَسْتَغْفِرُ اللَّهَ",
+            "اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ",
+          ],
+          tc = 0;
+        TS.forEach(function (t, i) {
+          var b = document.createElement("button");
+          b.textContent = t;
+          b.setAttribute("data-ar", "");
+          b.setAttribute("aria-pressed", i === 0);
+          b.onclick = function () {
+            tc = 0;
+            Array.prototype.forEach.call($("pk").children, function (x, j) {
+              x.setAttribute("aria-pressed", j === i);
+            });
+            drawT();
+          };
+          $("pk").appendChild(b);
+        });
+        function drawT() {
+          $("bc").textContent = nf(tc);
+        }
+        $("bc").onclick = function () {
+          tc++;
+          drawT();
+        };
+        $("br").onclick = function () {
+          tc = 0;
+          drawT();
+        };
+        var jd = [];
+        try {
+          jd = JSON.parse(localStorage.getItem("sjuz") || "[]");
+        } catch (e) {}
+        function drawJ() {
+          var g = $("jg");
+          g.innerHTML = "";
+          for (var i = 1; i <= 30; i++)
+            (function (i) {
+              var b = document.createElement("button");
+              b.setAttribute("aria-pressed", jd.indexOf(i) > -1);
+              b.innerHTML = "<span>الجزء</span> <b>" + nf(i) + "</b>";
+              b.onclick = function () {
+                var k = jd.indexOf(i);
+                if (k > -1) jd.splice(k, 1);
+                else jd.push(i);
+                try {
+                  localStorage.setItem("sjuz", JSON.stringify(jd));
+                } catch (e) {}
+                drawJ();
+                tr();
+              };
+              g.appendChild(b);
+            })(i);
+          $("jp").innerHTML =
+            "<b>" +
+            nf(jd.length) +
+            "</b> / <b>" +
+            nf(30) +
+            "</b> <span>جزءًا مقروءًا</span>";
+        }
+        "اللَّهُ،الرَّحْمَنُ،الرَّحِيمُ،الْمَلِكُ،الْقُدُّوسُ،السَّلَامُ،الْمُؤْمِنُ،الْمُهَيْمِنُ،الْعَزِيزُ،الْجَبَّارُ،الْمُتَكَبِّرُ،الْخَالِقُ،الْبَارِئُ،الْمُصَوِّرُ،الْغَفَّارُ،الْقَهَّارُ،الْوَهَّابُ،الرَّزَّاقُ،الْفَتَّاحُ،الْعَلِيمُ،الْقَابِضُ،الْبَاسِطُ،الْخَافِضُ،الرَّافِعُ،الْمُعِزُّ،الْمُذِلُّ،السَّمِيعُ،الْبَصِيرُ،الْحَكَمُ،الْعَدْلُ،اللَّطِيفُ،الْخَبِيرُ،الْحَلِيمُ،الْعَظِيمُ،الْغَفُورُ،الشَّكُورُ،الْعَلِيُّ،الْكَبِيرُ،الْحَفِيظُ،الْمُقِيتُ،الْحَسِيبُ،الْجَلِيلُ،الْكَرِيمُ،الرَّقِيبُ،الْمُجِيبُ،الْوَاسِعُ،الْحَكِيمُ،الْوَدُودُ،الْمَجِيدُ،الْبَاعِثُ،الشَّهِيدُ،الْحَقُّ،الْوَكِيلُ،الْقَوِيُّ،الْمَتِينُ،الْوَلِيُّ،الْحَمِيدُ،الْمُحْصِي،الْمُبْدِئُ،الْمُعِيدُ،الْمُحْيِي،الْمُمِيتُ،الْحَيُّ،الْقَيُّومُ،الْوَاجِدُ،الْمَاجِدُ،الْوَاحِدُ،الصَّمَدُ،الْقَادِرُ،الْمُقْتَدِرُ،الْمُقَدِّمُ،الْمُؤَخِّرُ،الْأَوَّلُ،الْآخِرُ،الظَّاهِرُ،الْبَاطِنُ،الْوَالِي،الْمُتَعَالِي،الْبَرُّ،التَّوَّابُ،الْمُنْتَقِمُ،الْعَفُوُّ،الرَّءُوفُ،مَالِكُ الْمُلْكِ،ذُو الْجَلَالِ وَالْإِكْرَامِ،الْمُقْسِطُ،الْجَامِعُ،الْغَنِيُّ،الْمُغْنِي،الْمَانِعُ،الضَّارُّ،النَّافِعُ،النُّورُ،الْهَادِي،الْبَدِيعُ،الْبَاقِي،الْوَارِثُ،الرَّشِيدُ،الصَّبُورُ"
+          .split("،")
+          .forEach(function (n) {
+            var s = document.createElement("span");
+            s.textContent = n;
+            $("nm").appendChild(s);
+          });
+        $("sh").onclick = function () {
+          var b = this,
+            u = location.href;
+          if (navigator.share) {
+            navigator
+              .share({ title: document.title, url: u })
+              .catch(function () {});
+            return;
+          }
+          var done = function () {
+            var o = b.textContent;
+            b.textContent = window.T("تم نسخ الرابط");
+            setTimeout(function () {
+              b.textContent = o;
+            }, 1800);
+          };
+          try {
+            navigator.clipboard.writeText(u).then(done, done);
+          } catch (e) {
+            done();
+          }
+        };
+        drawT();
+        drawJ();
+        try {
+          if (localStorage.getItem("slang") === "en") apply(true);
+        } catch (e) {}
+
+        if (!reduce && "IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (!e.isIntersecting) return;
+                var el = e.target;
+                io.unobserve(el);
+                el.classList.add("in");
+                setTimeout(function () {
+                  el.classList.remove("rv", "in");
+                }, 900);
+              });
+            },
+            { threshold: 0.15 },
+          );
+          document
+            .querySelectorAll(
+              ".hadith .wrap>div:last-child,.qbox,.duas p,section .intro",
+            )
+            .forEach(function (el, i) {
+              el.classList.add("rv");
+              el.style.transitionDelay = (i % 3) * 80 + "ms";
+              io.observe(el);
+            });
+        }
+      })();
+    </script>
+  </body>
+</html>
